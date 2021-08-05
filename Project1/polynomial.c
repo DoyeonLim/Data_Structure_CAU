@@ -33,7 +33,7 @@ int main()
 
 	printf("Enter A(x):\n\n");
 
-	printf("°è¼ö°¡ 0ÀÌ ¾Æ´Ñ Ç×ÀÇ ¼ö?: ");
+	printf("ê³„ìˆ˜ê°€ 0ì´ ì•„ë‹Œ í•­ì˜ ìˆ˜?: ");
 	scanf("%d", &nA);
 
 	startA = 0;
@@ -41,10 +41,10 @@ int main()
 
 	for (i = startA; i <= finishA; i++)
 	{
-		printf("°è¼ö?: ");
+		printf("ê³„ìˆ˜?: ");
 		scanf("%d", &terms[i].coef);
 
-		printf("Áö¼ö?: ");
+		printf("ì§€ìˆ˜?: ");
 		scanf("%d", &terms[i].expon);
 	}
 
@@ -52,7 +52,7 @@ int main()
 
 	printf("Enter B(x):\n\n");
 
-	printf("ÃÖ°íÂ÷ Ç×ÀÇ Áö¼ö´Â?: ");
+	printf("ìµœê³ ì°¨ í•­ì˜ ì§€ìˆ˜ëŠ”?: ");
 	scanf("%d", &B.degree);
 
 	startB = nA;
@@ -62,7 +62,7 @@ int main()
 
 	for (i = startB; i <= finishB; i++)
 	{
-		printf("%d¹øÂ° Ç×ÀÇ °è¼ö?: ", zero_1);
+		printf("%dë²ˆì§¸ í•­ì˜ ê³„ìˆ˜?: ", zero_1);
 		scanf("%d", &B.coef[zero_1]);
 
 		zero_1 = zero_1 + 1;
@@ -106,7 +106,7 @@ int main()
 
 	padd_h(startA, finishA, startB, finishB, &startD, &finishD);
 
-	printf("´ÙÇ×½Ä A(x) + B(x) = ");
+	printf("ë‹¤í•­ì‹ A(x) + B(x) = ");
 
 	for (i = startD; i <= finishD; i++)
 	{
@@ -166,3 +166,4 @@ void attach(int coefficient, int exponent)
 	terms[avail].coef = coefficient;
 	terms[avail++].expon = exponent;
 }
+
